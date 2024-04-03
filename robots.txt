@@ -1,0 +1,4 @@
+robots.txt
+User-agent: *
+Disallow: /.github/
+Sitemap: https://virabrest.by/sitemap.xml
