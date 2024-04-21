@@ -56,9 +56,17 @@
           <li><a class="nav-link scrollto" href="#about">О компании</a></li>
           <li><a class="nav-link scrollto" href="#services">Услуги</a></li>
           <li><a class="nav-link scrollto" href="#contact">Контакты</a></li>
-          <!-- <li class="dropdown scrollto get-started-btn">
-            <a href="#" onclick="toggleMenu(event)">Связь с нами</a>
-            <ul id="options-menu" style="display: none;">
+          <li class="dropdown"><a href="#" style="margin-left: 30px;
+            background: #e03a3c;
+            color: #fff;
+            border-radius: 4px;
+            padding: 8px 25px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;" onclick="toggleMenu(event)">Связь с нами</a>
+            <ul id="options-menu">
               <li><a href="tel:+375336075075" target="_blank">Позвонить</a></li>
               <li><a href="mailto:vira.brest@mail.ru" target="_blank">Написать письмо</a></li>
               <li><a href="viber://chat?number=%2B375336075075" target="_blank">Сообщение в Viber</a>
@@ -67,35 +75,10 @@
               <li><a href="https://wa.me/375336075075" target="_blank">Сообщение в WhatsApp</a></li>
             </ul>
           </li>
-          <script>
-            function toggleMenu(event) {
-              event.preventDefault();
-              const menu = document.getElementById("options-menu");
-              menu.style.display = menu.style.display === "none" ? "block" : "none";
-            }
-    
-            // Close the menu if clicking outside of it
-            document.addEventListener("click", function (event) {
-              const menu = document.getElementById("options-menu");
-              const target = event.target;
-              if (target.closest(".dropdown") === null) {
-                menu.style.display = "none";
-              }
-            });
-          </script> -->
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
-      <a href="#" class="get-started-btn scrollto" onclick="toggleMenu(event)">Связь с нами</a>
-      <ul id="options-menu" style="display: none;">
-        <li><a href="tel:+375336075075" target="_blank">Позвонить</a></li>
-        <li><a href="mailto:vira.brest@mail.ru" target="_blank">Написать письмо</a></li>
-        <li><a href="viber://chat?number=%2B375336075075" target="_blank">Сообщение в Viber</a>
-        </li>
-        <li><a href="https://t.me/Kolyalos" target="_blank">Сообщение в Telegram</a></li>
-        <li><a href="https://wa.me/375336075075" target="_blank">Сообщение в WhatsApp</a></li>
-      </ul>
 
       <script>
         function toggleMenu(event) {
@@ -108,7 +91,7 @@
         document.addEventListener("click", function (event) {
           const menu = document.getElementById("options-menu");
           const target = event.target;
-          if (target.closest(".get-started-btn") === null) {
+          if (target.closest(".dropdown") === null) {
             menu.style.display = "none";
           }
         });
